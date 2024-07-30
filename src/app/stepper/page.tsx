@@ -9,20 +9,20 @@ interface Step {
 
 const CHECKOUT_STEPS: Step[] = [
   {
-    name: `Your details name and info`,
+    name: `Your details`,
     Component: () => <div className='hidden'>Provide your contact details.</div>,
   },
   {
-    name: "Personalisation(choose a focus section)",
+    name: "Personalisation",
     Component: () => <div className='hidden'>Enter your shipping address.</div>,
   },
   {
-    name: "Profile(set your profile picture)",
+    name: "Profile",
     Component: () => <div className='hidden'>Complete payment for your order.</div>,
   },
 ];
 
-const StepperPage: React.FC = () => {
+const PageFlow: React.FC = () => {
   return (
     <div className='pt-[2rem] text-center text-green-500 mx-4'>
       <h2></h2>
@@ -31,5 +31,5 @@ const StepperPage: React.FC = () => {
   );
 }
 
-export default StepperPage;
+export default PageFlow;
 
